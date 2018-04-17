@@ -1,0 +1,334 @@
+/*
+	CPT208 - Mobile Web Development
+	
+	Assignment 4 - 1826 Bistro On The Green
+	file name: 	cssMenu.css
+	
+	Author: 		Maria Kicklighter
+	created: 	03/03/2018
+	updated:  	
+	03/10/2018 - changed width from 90% to 100%
+	03/11/2018 - put background image in main folder
+*/
+
+.w3-col
+{ 
+	/*outline: 2px solid green; */
+	text-align:center;
+}
+
+.w3-bar
+{
+	/*	outline: 2px solid green;*/
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.w3-bar-item
+{
+	background:transparent;
+}
+
+.w3-bar-inner{
+	text-align:center;
+}
+
+h3, h4, h5
+{
+	text-align:center;
+}
+
+/* --------------------- center all contents in page, can not use "body" class needed a new div --------------*/
+
+.MainBody
+{
+	/*outline:6px solid purple;*/
+	width:  100%; 
+	margin-left:auto;
+	margin-right:auto;
+	font-family: 'Montserrat', Bookman, 'Open Sans', sans-serif;	
+	font-size:1.0em;
+	padding:0;
+	background-image: url("http://205.186.33.94/~mkicklig/CPT208/ASG4/background5-tiny.png");	
+}
+
+/*-------------------------------------------------- headers ----------------------------------------------------------*/
+.header
+{
+	/*	outline: 2px solid yellow;*/
+	width:100%;
+	height:auto;
+	padding:20px 0px 5px 0px;
+}
+
+.headerLogo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+/* ---------------------------------------------------- navigation bar -------------------------------------------*/
+
+.w3-bar
+{
+	/*	outline: 2px solid pink;*/
+	float:center;
+}
+
+.w3-bar-item a:hover
+{
+	color: grey;
+	cursor: pointer;
+}
+
+/*------------------------------------------------------- slide show --------------------------------------------------*/
+
+#slideshow
+{
+	width:100%;
+	max-width:500px;
+	margin:auto;
+}
+
+.mySlides
+{
+	width:100%;
+	max-width:500px;
+	margin:auto;
+	border-radius:3px;
+	box-shadow: 0 0 10px 2px gray;
+}
+
+.slideshow-container
+{
+	/*	outline: 2px solid pink;*/
+	max-width: 500px;
+	position: relative;
+	margin: auto;
+}
+
+/*------------------------------------------------ main div --------------------------------------------- */
+.mainClass
+{
+	/*	outline:7px solid green;*/
+	width:100%;
+	margin:auto;
+	padding-bottom:2px;
+	font-size: 1.0em;
+	font-family: 'Montserrat', Bookman, 'Open Sans', sans-serif;	
+	padding-top:5px;
+}
+
+/* ---------------------------------- format content of homepage ------------------------------*/
+#homePage
+{
+	margin-top:10px;
+	width:90%;
+	margin:auto;
+	text-align:left;
+	text-align:justify;
+	font-family: 'Montserrat';
+	font-size:1.1em;
+}
+
+/* ---------------------------------------------- map -----------------------------------------------------------------*/
+
+#map
+{
+	width:90%;
+	margin:auto;
+}
+
+/*------------------------------ style for menu section titles -------------------------------*/
+
+#plateInfo
+{
+	text-align:left;
+	width:75%;
+	margin:auto;
+	font-size:.9em;
+}
+
+/* --------------------------------------- table styles --------------------------------------*/
+.tables
+{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.title
+{
+	display:block;
+	text-align:left;
+	font-size:1.3em;
+	width:88%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	font-family:'Felix Titling', sans-serif;
+	font-weight:100;
+	letter-spacing: 1px;
+}
+
+.beerTitle
+{
+	display:block;
+	text-align:center;
+	font-size:1.3em;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	font-family:'Felix Titling', sans-serif;
+	font-weight:100;
+	letter-spacing: 1px;
+}
+
+.pageTitle
+{
+	display:block;
+	text-align:center;
+	font-size:1.9em;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:'Felix Titling', sans-serif;
+	font-weight:100;
+	letter-spacing: 1px;
+}
+
+.td
+{
+	outline: 2px solid pink;
+	margin-bottom:30px;
+}
+
+.quoteTable
+{
+	border-radius:6px;
+	box-shadow: 0 0 15px 2px gray;
+	width:80%;
+	margin-top:28px;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background:rgba(211,211,211,0.3);
+	font-family:Georgia;
+	font-size:1.1em;
+}
+
+.homeTable
+{
+	border-radius:2px;
+	box-shadow: 0 0 5px 2px gray;
+	width:90%;
+	margin:auto;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:justify;
+	font-size:1.1em;
+	font-style:italics;
+}
+
+/*------------------------------------- item name in menu pages tables ---------------------------------- */
+
+.itemName
+{
+	/*  outline: 2px solid green; */ 
+	font-style:italic;
+	font-weight: 600;
+	font-size: 1.0em;
+	float:left;
+	margin-right:5px;
+	text-transform: uppercase;
+	text-align:left;
+}
+
+.itemDesc
+{
+	display: block;
+	text-align:left;
+	float:left;
+	margin-bottom:20px;
+}
+
+.itemPrice
+{
+	float:right;
+}
+
+.bottleDesc
+{
+	font-size:1.0em;
+	float:left;
+	text-align:left;
+}
+
+/*------------------------------------- ------------------------font awesome----------------------------------------- */
+
+.upArrow
+{
+	color:black;
+	text-align:center;
+	border-radius:8px;
+}
+
+/*-------------------------------------------------- footer  ---------------------------------------------- */
+footer
+{
+	font-family:'Montserrat', 'Open Sans', Pristina,Bookman, sans-serif;
+	text-align:center; 
+	font-size:1.2em; 
+	color:black;
+	width: 100%;
+	padding:0;
+	margin-top:0;
+	padding-bottom:10px;
+}
+
+#footerWords
+{
+	font-size:.85em;
+	text-align:center;
+}
+
+.footerTitle
+{
+	text-align:center;
+	display: inline-block;
+	padding-bottom: 5px;
+	position: relative;
+	font-family:'Felix Titling', sans-serif;
+}
+
+/* -------------- partial underline code found: https://stackoverflow.com/questions/23502675/css-underline-less-than-width-of-headline ---*/
+.footerTitle:before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	bottom: 0;
+	left: 25%;
+	border-bottom: 1px solid black;
+}
+
+.copyright
+{
+	font-size:.8em;
+}
+
+.whiteLine
+{
+	margin-top:5px;
+	border-width: 4px;
+	border-color:white;
+}
+

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<!-- 
+		CPT208 - Mobile Web Development
+		
+		Assignment 4 - 1826 Bistro On The Green
+		file name: 	lunch.html
+		
+		Author: 		Maria Kicklighter
+		created: 	3/6/2018
+		updated: 	
+	-->
+	
+	<!-- google fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" media="all" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Felix+Titling:200,300,400,500,600,700,800" media="all" />
+	
+	<!-- use 1826bistro stylesheet -->
+	<link rel="stylesheet" type="text/css" href="cssMenu.css">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- w3.css -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<!-- font awesome icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!----------------------------------------------- favicon: icon and title on website tab ---------------------------------->
+		<link rel="icon" type="Image/png" href="images/1826logo-cropped.png" />
+		<title>1826 Bistro on the Green</title> 
+		
+	</head>
+	
+	<body>
+		
+		<div class="MainBody">
+			
+			<!---------------------------------------- header ----------------------------------------------------->
+			<div class="header">
+				<a href="index.html"><img class="headerLogo"  src="images/1826logo-1.png" alt=""></a>
+			</div>	
+			<!------------------------------------------ navigation ----------------------------------------------->		
+			<!-- collapseable bar -->
+			<div class="w3-center" id="menuBar">	
+				<div class="w3-bar">
+					<a href="index.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Home</a>
+					<a href="lunch.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-text-black" style="font-weight:bold;">Lunch</a>
+					<a href="dinner.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Dinner</a>
+					<a href="cocktails.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Cocktails</a>
+					<a href="location.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Location</a>
+					<a href="javascript:void(0)" class="w3-bar-item w3-btn w3-right w3-hide-large w3-hide-medium" 
+					onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>
+			<!-- id="menuNavbar executes the javascript -->
+			<div id="menuNavbar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+				<a href="index.html" class="w3-center w3-bar-item w3-btn">Home</a>
+				<a href="lunch.html" class="w3-center w3-bar-item w3-btn w3-white">Lunch</a>
+				<a href="dinner.html" class="w3-center w3-bar-item w3-btn">Dinner</a>
+				<a href="cocktails.html" class="w3-center w3-bar-item w3-btn">Cocktails</a>
+				<a href="location.html" class="w3-center w3-bar-item w3-btn">Location</a>
+			</div>		
+			
+			<!------------------------------------------------------- main ------------------------------------------------------------->
+			<section class="mainClass">
+				
+				<hr class="whiteLine">
+				
+				<!-- BEGIN row -->
+				<!-- Page title -->
+				<div class="w3-row row1">    
+					<div class="w3-col m12" >	
+						<p>
+							<span  class="pageTitle"><b>LUNCH</b></span>				
+						</p>
+					</div>  
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row row1">    
+					
+					<div class="w3-col m6" >		  <!-- START left columns -->
+						<p>
+							<span  class="title"><b>SALADS</b></span>
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">Kale & Beet Salad</span>
+										<span class="itemPrice">9.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">arugula, baby kale, goat cheese, pickled red onion, sunflower seeds, raisins,
+									and roasted beets, creamy maple dressing</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pickled Garden Salad</span>
+										<span class="itemPrice">8.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">mixed greens, red onion and house pickled root vegetables, 
+										<span class="w3-tag w3-green w3-round-medium"><a href="http://www.growinggreenfamilyfarms.com/" target="_blank" >local</a></span>
+										<a href="http://www.growinggreenfamilyfarms.com/" target="_blank" >Growing Green Family Farms</a>
+										radish sprouts, and pea shoots, Parmesan peppercorn dressing
+									</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Roasted Apple, Walnut & Chicken</span>
+										<span class="itemPrice">10.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">mixed greens, cinnamon roasted apples, Gorgonzola crumbles, candied walnuts,
+									roasted chicken breasts, thyme vinaigrette</td>
+								</tr>
+							</table>	  	<!-- END: SALADS table -->		
+							
+							<h3  class="title"><b>&Aacute La Carte </b></h3>
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">Sweet Potato Fries</span>
+										<span class="itemPrice">3.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Steak Fries</span>
+										<span class="itemPrice">3.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Seasonal Soups</span>
+										<span class="itemPrice">Cup 3.95</span>
+									</td>  
+									<tr>
+										<td class="item">
+											<span class="itemPrice">Bowl 5.95</span>
+										</td>  
+									</tr>
+								</tr>
+							</table>	  	<!-- END: A LA CARTE table -->		
+							
+							<p id="plateInfo">House-made salad dressing choices include: <br> <b>Herb Vinaigrette</b>,
+								<b>Creamy Maple</b> or <b>Parmesan Peppercorn</b>
+							</p><br>
+							
+							<p id="plateInfo">20% Gratuity will be added to parties of six or more
+							</p>
+							
+							<table class="quoteTable">		
+								<tr>
+									<td class="item">	
+										<p><i>" My favorite place for lunch for miles around! Amazing chef and very fresh good. 
+										Beautiful setting, especially on the patio in warm weather."  <span style="float:right; margin-right:5px;">~ Marty</span></i></p>
+									</td>
+								</tr>
+							</table> 	
+							
+						</p>
+					</div>    <!-- END left columns -->						
+					
+					<div class="w3-col m6" >		  <!-- START right columns -->
+						<p>
+							<span  class="title"><b>PLATES</b></span>
+							<!-- use an alert panel -->
+							<!--
+								<div class="w3-panel w3-sand" id="plateInfo"">The following menu items come with a choice of one:
+								garden side salad, sweet potato fries, steak fries or daily soup
+								</div>
+							-->
+							
+							<p id="plateInfo">The following menu items come with a choice of one:<br>
+								<b>garden side salad</b>, <b>sweet potato fries</b>, <b>steak fries</b> or <b>daily soup</b>
+							</p>
+							<br>
+							<br>
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">Crab Cake Sliders</span>
+										<span class="itemPrice">11.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">house-made 1826 lemon and shallot crab cakes on toasted brioche buns	
+									topped with r&eacutemoulade, baby greens and pickled onions</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Bacon Beef Sliders</span>
+										<span class="itemPrice">9.95</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">two angus beef burgers, melted white cheddar & roasted red pepper spread,
+									tangy bacon jam, on brioche buns</td>	
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Butternut Squash Pie</span>
+										<span class="itemPrice">8.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">flaky butter pastry filled with roasted winter squash, caramelized onions, bourisin 
+									herb cheese, spinach, goat cheese, thyme</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Thai Fish Tacos</span>
+										<span class="itemPrice">8.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">blackened baked white fish, crispy apple, cabbage and lime slaw,
+									mint and sesame aioli, on corn tortillas</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Eggplant & Feta Stack</span>
+										<span class="itemPrice">9.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">crispy fried eggplant layered with feta cheese and tomato fresca sauce,
+									garnish with toasted walnuts, olive oil, micro greens</td>
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Meatloaf Sandwich</span>
+										<span class="itemPrice">9.95</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="itemDesc">seared meatloaf on ciabatta bread, white cheddar mousse, smoky 
+									red pepper romesco sauce, baby spinach</td>
+								</tr>
+							</table>	  	<!-- END: PLATES table -->		
+						</p>
+						
+					</div>    <!-- END right columns -->		
+					
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">
+					<p>
+						
+						<!-- pdf -->
+						<div class="w3-col m4" >
+							<p></p>
+							<!--
+								<a href="#"
+								target="_blank" class="w3-btn w3-black w3-round-large"  id="pdfColumn" aria-hidden="true" data-toggle="tooltip" 
+								title="Click for PDF">Click for PDF of the Lunch Menu</a>
+							-->
+						</div>
+						
+						<!-- up to top -->
+						<div class="w3-col m4">
+							<div class="upArrow">
+								<a class="w3-button w3-round" onclick="topFunction()"><i class="	fa fa-arrow-circle-up fa-2x"></i></a>				
+							</div>
+						</div>
+						
+						<!-- menu current issue date -->
+						<div class="w3-col m4 menuDateColumn">
+							<img src="images/menu - lunch 3.2.18.png" style="width:70%;">
+						</div>
+						
+					</p>
+				</div>
+				
+				<hr class="whiteLine">
+				
+			</section>  <!-- END main section -->
+			
+			<!----------------------------------------------------------------- footer ------------------------------------------------------------->
+			<footer>
+				
+				<div class="w3-row">
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>			
+					<!-- address -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>ADDRESS</b></h3>
+						<p id="footerWords">
+							105 Exchange Street,
+							Pendleton, SC
+							<br><i class="fa fa-envelope fa-fw"></i>&nbsp 
+							<a href="mailto:1826onthegreen@gmail.com" data-toggle="tooltip" 
+							title="Click here to email us." >1826onthegreen@gmail.com</a>
+							<br><i class="fa fa-phone fa-fw"></i>&nbsp 864-646-5500
+						</p>
+					</div>
+					<!-- follow us -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>FOLLOW US</b></h3>
+						<p id="footerWords">
+							<a href="https://www.facebook.com/1826bistro/" target="_blank" data-toggle="tooltip" title="Click to go to our Facebook page.">
+							<img src="images/facebooklogo.png" style="width:19%;"></a>
+							<a href="http://instagram.com/1826bistro" target="_blank" data-toggle="tooltip" title="Click to go to our Instagram page.">
+							<img src="images/instagramlogo.png" style="width:16%;"></a>&nbsp  &nbsp
+							<a href="https://www.yelp.com/biz/1826-bistro-pendleton?osq=1826+bistro" target="_blank" data-toggle="tooltip" title="See reviews on Yelp!">
+							<img src="images/yelplogo.png" style="width:15%;"></a>
+						</p>
+					</div>	
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+				</div>  <!-- END row -->
+				
+				<div class="w3-row">
+					<!-- copyright -->
+					<div class="w3-col m12 copyright">
+						<p>
+							Copyright © 1826 Bistro 2018
+						</p>
+					</div>	
+				</div> <!-- END row -->
+				
+			</footer>
+			
+		</div>				<!-- END mainBody-->
+		<!------------------------------------------------------------------ javascript & JQuery ----------------------------------------------------------------------->
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		
+		<script>
+			
+			<!-- collapse navbar -->
+			function myFunction() 
+			{
+				var x = document.getElementById("menuNavbar");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+					} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+				}
+				
+				<!-- scroll to top of document -->
+				<!-- code from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+				function topFunction() 
+				{
+					document.body.scrollTop = 0; 						// For Safari
+					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				}	
+				
+				<!-- jquery for tooltip pop up -->
+				$(document).ready(function()
+				{
+					$('[data-toggle="tooltip"]').tooltip(); 
+				});
+				
+		</script>
+		
+	</body>
+	
+</html>																																				

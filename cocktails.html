@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<!-- 
+		CPT208 - Mobile Web Development
+		
+		Assignment 4 - 1826 Bistro On The Green
+		file name: 	cocktails.html
+		
+		Author: 		Maria Kicklighter
+		created: 	3/6/2018
+		updated: 	
+	-->
+	
+	<!-- google fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" media="all" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Felix+Titling:200,300,400,500,600,700,800" media="all" />
+	
+	<!-- use 1826bistro stylesheet -->
+	<link rel="stylesheet" type="text/css" href="cssMenu.css">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- w3.css -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<!-- font awesome icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+		<!----------------------------------------------- favicon: icon and title on website tab ---------------------------------->
+		<link rel="icon" type="Image/png" href="images/1826logo-cropped.png" />
+		<title>1826 Bistro on the Green</title> 
+		
+	</head>
+	
+	<body>
+		
+		<div class="MainBody">
+			
+			<!---------------------------------------- header ----------------------------------------------------->
+			<div class="header">
+				<a href="index.html"><img class="headerLogo"  src="images/1826logo-1.png" alt=""></a>
+			</div>	
+			<!------------------------------------------ navigation ----------------------------------------------->		
+			<!-- collapseable bar -->
+			<div class="w3-center" id="menuBar">	
+				<div class="w3-bar">
+					<a href="index.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Home</a>
+					<a href="lunch.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Lunch</a>
+					<a href="dinner.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Dinner</a>
+					<a href="cocktails.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-text-black" style="font-weight:bold;">Cocktails</a>
+					<a href="location.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Location</a>
+					<a href="javascript:void(0)" class="w3-bar-item w3-btn w3-right w3-hide-large w3-hide-medium" 
+					onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>			
+			<!-- id="menuNavbar executes the javascript -->
+			<div id="menuNavbar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+				<a href="index.html" class="w3-center w3-bar-item w3-btn">Home</a>
+				<a href="lunch.html" class="w3-center w3-bar-item w3-btn">Lunch</a>
+				<a href="dinner.html" class="w3-center w3-bar-item w3-btn">Dinner</a>
+				<a href="cocktails.html" class="w3-center w3-bar-item w3-btn w3-white">Cocktails</a>
+				<a href="location.html" class="w3-center w3-bar-item w3-btn">Location</a>
+			</div>
+			
+			<!------------------------------------------------------- main ------------------------------------------------------------->
+			<section class="mainClass">
+				
+				<hr class="whiteLine">
+				
+				<!-- BEGIN row -->
+				<!-- Page title -->
+				<div class="w3-row">    
+					<div class="w3-col m12" >	
+						<p>
+							<span  class="pageTitle"><b>COCKTAILS</b></span>				
+						</p>
+					</div>  
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row ">    
+					
+					<div class="w3-col m6" >		  <!-- START left columns -->
+						<p>
+							<span  class="title"><b>GLASS / BOTTLE</b>
+								<span style="float:right; margin-right:40px;">9/32</span>
+							</span>
+							
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">Blanc de Blancs, </span>
+										<span class="bottleDesc">Simonet Brut, Alsace, France</span>	
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Rose of Garnacha, </span>	
+										<span class="bottleDesc">Muga, Rioja, Spain, <i>full-bodied & complex</i></span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Riesling, </span>	
+										<span class="bottleDesc">Shine, Rheinhessen, Germany</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pecorino, </span>	
+										<span class="bottleDesc">Vallevò, Abruzzo, Italy, <i>grassy, clean & citrusy</i></span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Sauvignon Blanc, </span>	
+										<span class="bottleDesc">Villa Wolf, Pflaz, Germany</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Chardonnay, </span>	
+										<span class="bottleDesc">Annabella, Napa Valley, CA</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Bonarda, </span>		
+										<span class="bottleDesc">Via Revolucionaria, Mendoza, <i>vibrant and fruity</i></span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Grenache/Syrah, </span>
+										<span class="bottleDesc">Domaine de Couron, Côtes du Rhône</span>
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Cabernet/Pinotage, </span>			
+										<span class="bottleDesc">Kanonkop, South Africa, <i>full & earthy</i></span>
+									</td>  
+								</tr>					
+							</table>	  	<!-- END: GLASS/BOTTLE table -->		
+							
+							<br>
+							<h3  class="title"><b>SPIRITS </b></h3>
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">House-made Sangria of the day</span>
+										<span class="itemPrice">8</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Aperitivo Rosa</span>
+										<span class="itemPrice">8</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">Americano Rosa, splash of grapefruit, Champagne, orange and herb garnish</td>	
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Apple Spritzer</span>
+										<span class="itemPrice">8</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">German Apple Schnapps, Champagne, and bandy soaked apples</td>	
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">ROSEMARY SMASH</span>
+										<span class="itemPrice">10</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">muddled rosemary, fresh pomegranate, vodka, lemon, topped with soda, 
+									cara cara orange garnish</td>	
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">PALOMA COCKTAIL</span>
+										<span class="itemPrice">10</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">tequila, St. Germain elderflower liqueur, lime, grapefruit juice 
+										and mint shaken, up or on the rocks
+									</td>	
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">CUCUMBER COOLER</span>
+										<span class="itemPrice">9</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="itemDesc">cucumber, lime, & ginger house-infused vodka, shaken with fresh 
+									sour, lemon basil, finished on the rocks with splash of soda</td>	
+								</tr>
+							</table>	  	<!-- END: SPIRITS table -->		
+							
+						</p>
+					</div>    <!-- END left columns -->						
+					
+					<div class="w3-col m6" >		  <!-- START right columns -->
+						<p>
+							<span  class="title"><b>BOTTLE</b></span>
+							<!-- table of menu items -->
+							<table class="tables">
+								<tr>
+									<td class="item">
+										<span class="itemName">Sancerre Sauvignon Blanc, </span>
+										<span class="bottleDesc">Roger Neveu, France</span>
+										<span class="itemPrice">47</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Sauvignon Blanc, </span>
+										<span class="bottleDesc">Petit Clos Henri, Marlborough, NZ</span>	
+										<span class="itemPrice">39</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Viognier, </span>
+										<span class="bottleDesc">Château du Trignon, Côtes du Rhône</span>	
+										<span class="itemPrice">45</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Chenin Blanc, </span>
+										<span class="bottleDesc">Secateurs, Swartland, South Africa</span>	
+										<span class="itemPrice">38</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pino Gris, </span>
+										<span class="bottleDesc">Christom, Willamette Valley</span>	
+										<span class="itemPrice">41</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Chardonnay, </span>
+										<span class="bottleDesc">Lis Neris Jurosa, Friuli, Italy</span>	
+										<span class="itemPrice">74</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pinot Noir, </span>
+										<span class="bottleDesc">Cristom, Mr. Jefferson, Willamette Valley</span>	
+										<span class="itemPrice">62</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pinot Noir, </span>
+										<span class="bottleDesc">Grochau Cellars, Willamette Valley, OR </span>	
+										<span class="itemPrice">56</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Pinot Noir, </span>
+										<span class="bottleDesc">Santa Barbara Winery, Sta. Rita Hills </span>	
+										<span class="itemPrice">41</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Gamay, </span>
+										<span class="bottleDesc">Nicole Chanrion, Côte-de-Brouilly, Beaujolais </span>	
+										<span class="itemPrice">46</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Shiraz/Cinsault, </span>
+										<span class="bottleDesc">Secateurs, Swartland, South Africa</span>	
+										<span class="itemPrice">42</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Valpolicella Blend, </span>
+										<span class="bottleDesc">Tezza Ma Roat, Italy</span>	
+										<span class="itemPrice">34</span>
+									</td> 
+								</tr>	
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Barbera D’Alba, </span>
+										<span class="bottleDesc">Rinaldi, Monforte d’Alba, Italy </span>	
+										<span class="itemPrice">44</span>
+									</td> 
+								</tr>	
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Zinfandel, </span>
+										<span class="bottleDesc">Turley, Zinfandel Juvenile, Napa Valley </span>	
+										<span class="itemPrice">63</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Sangiovese, </span>
+										<span class="bottleDesc">Miner, Gibson Ranch, Mendocino</span>	
+										<span class="itemPrice">65</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Malbec, </span>
+										<span class="bottleDesc">Vaglio Aggie, Valle de Uco, Argentina</span>	
+										<span class="itemPrice">42</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Tannat, </span>
+										<span class="bottleDesc">Domaine Mouréou, Madiran, France</span>
+										<span class="itemPrice">36</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Syrah, </span>
+										<span class="bottleDesc">Hedges, Goedhart Family, Red Mountain, WA</span>	
+										<span class="itemPrice">47</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Syrah Blend, </span>
+										<span class="bottleDesc">Marietta Cellars Christo, Sonoma</span>	
+										<span class="itemPrice">62</span>
+									</td> 
+								</tr>
+								<tr>
+									<td class="item">
+										<p></p>  <!-- empty row in table -->
+									</td>  
+								</tr>
+								<tr>
+									<td class="item">
+										<span class="itemName">Cabernet Sauvignon,</span>
+										<span class="bottleDesc">Priest Ranch, Napa Valley, CA</span>	
+										<span class="itemPrice">58</span>
+									</td> 
+								</tr>
+							</table>	  	<!-- END: BOTTLE table -->		
+						</p>
+						
+					</div>    <!-- END right columns -->		
+					
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">    
+					<div class="w3-col m12" >	
+						<p>
+							<span  class="beerTitle"><b>BEER</b></span>				
+						</p>
+					</div>  
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">    
+					<div class="w3-col m4" >	
+						<p></p>  <!-- empty columns -->
+					</div>  
+					<div class="w3-col m4" >	
+						<!-- table of BEER items -->
+						<table class="tables">
+							<tr>
+								<td class="item">
+									<span class="itemName">Fullsteam Paycheck Pilsner</span>
+									<span class="itemPrice">5</span>
+								</td> 
+							</tr>
+							<tr>
+								<td class="item">
+									<p></p>  <!-- empty row in table -->
+								</td>  
+							</tr>
+							<tr>
+								<td class="item">
+									<span class="itemName">Westbrook IPA</span>
+									<span class="itemPrice">5</span>
+								</td> 
+							</tr>
+							<tr>
+								<td class="item">
+									<p></p>  <!-- empty row in table -->
+								</td>  
+							</tr>
+							<tr>
+								<td class="item">
+									<span class="itemName">Monk's Cafe Flemish Sour Red</span>
+									<span class="itemPrice">6</span>
+								</td> 
+							</tr>
+							<tr>
+								<td class="item">
+									<p></p>  <!-- empty row in table -->
+								</td>  
+							</tr>
+							<tr>
+								<td class="item">
+									<span class="itemName">Annabel Lee Belgian-style wheat</span>
+									<span class="itemPrice">6</span>
+								</td> 
+							</tr>
+							<tr>
+								<td class="item">
+									<p></p>  <!-- empty row in table -->
+								</td>  
+							</tr>
+							<tr>
+								<td class="item">
+									<span class="itemName">Julius Echter Hefe-Weissbier Dunkel</span>
+									<span class="itemPrice">7</span>
+								</td> 
+							</tr>
+							<tr>
+								<td class="item">
+									<p></p>  <!-- empty row in table -->
+								</td>  
+							</tr>
+							<tr>
+								<td class="item">
+									<span class="itemName">Anderson Valley Oatmeal Stout</span>
+									<span class="itemPrice">6</span>
+								</td> 
+							</tr>
+						</table>	  	<!-- END: BEER table -->		
+					</div>
+					<div class="w3-col m4" >	
+						<p></p>  <!-- empty columns -->
+					</div>  
+				</div>  <!-- END row -->
+				
+				<br>
+				<!-- up to top -->
+				<div class="upArrow">
+					<a class="w3-button w3-round" onclick="topFunction()"><i class="	fa fa-arrow-circle-up fa-2x"></i></a>				
+				</div>
+				
+				<hr class="whiteLine">
+				
+			</section>  <!-- END main section -->
+			
+			<!----------------------------------------------------------------- footer ------------------------------------------------------------->
+			<footer>
+				<!--    black line took out 3/6/18 <hr class="blackLine"> -->
+				
+				<div class="w3-row">
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>			
+					<!-- address -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>ADDRESS</b></h3>
+						<p id="footerWords">
+							105 Exchange Street,
+							Pendleton, SC
+							<br><i class="fa fa-envelope fa-fw"></i>&nbsp 
+							<a href="mailto:1826onthegreen@gmail.com" data-toggle="tooltip" 
+							title="Click here to email us." >1826onthegreen@gmail.com</a>
+							<br><i class="fa fa-phone fa-fw"></i>&nbsp 864-646-5500
+						</p>
+					</div>
+					<!-- follow us -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>FOLLOW US</b></h3>
+						<p id="footerWords">
+							<a href="https://www.facebook.com/1826bistro/" target="_blank" data-toggle="tooltip" title="Click to go to our Facebook page.">
+							<img src="images/facebooklogo.png" style="width:19%;"></a>
+							<a href="http://instagram.com/1826bistro" target="_blank" data-toggle="tooltip" title="Click to go to our Instagram page.">
+							<img src="images/instagramlogo.png" style="width:16%;"></a>&nbsp  &nbsp
+							<a href="https://www.yelp.com/biz/1826-bistro-pendleton?osq=1826+bistro" target="_blank" data-toggle="tooltip" title="See reviews on Yelp!">
+							<img src="images/yelplogo.png" style="width:15%;"></a>
+						</p>
+					</div>	
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+				</div>  <!-- END row -->
+				
+				<div class="w3-row">
+					<!-- copyright -->
+					<div class="w3-col m12 copyright">
+						<p>
+							Copyright © 1826 Bistro 2018
+						</p>
+					</div>	
+				</div> <!-- END row -->
+				
+			</footer>
+			
+		</div>				<!-- END mainBody-->
+		
+		<!------------------------------------------------------------------ javascript & JQuery ----------------------------------------------------------------------->
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		
+		<script>
+			
+			<!-- collapse navbar -->
+			function myFunction() 
+			{
+				var x = document.getElementById("menuNavbar");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+					} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+				}
+				
+				<!-- scroll to top of document -->
+			<!-- code from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 						// For Safari
+				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}		
+			
+			<!-- jquery for tooltip pop up -->
+			$(document).ready(function()
+			{
+				$('[data-toggle="tooltip"]').tooltip(); 
+			});
+			
+		</script>
+		
+	</body>
+	
+</html>																																

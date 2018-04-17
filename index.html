@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<!-- 
+		CPT208 - Mobile Web Development
+		
+		Assignment 4 - 1826 Bistro On The Green
+		file name: 	index.html
+		
+		Author: 		Maria Kicklighter
+		created: 	3/3/2018
+		updated: 	
+	-->
+	
+	<!-- google fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" media="all" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Felix+Titling:200,300,400,500,600,700,800" media="all" />
+	
+	<!-- use 1826bistro stylesheet -->
+	<link rel="stylesheet" type="text/css" href="cssMenu.css">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- w3.css -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<!-- font awesome icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+		
+		<!-- load background quicker -->
+		<!--code: https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/why-background-images-are-slow-to-display-and-how-to-make-them-appear-faster/ -->
+		<link rel="preload" href="background5-tiny.png" as="image">
+		
+		<!----------------------------------------------- favicon: icon and title on website tab ---------------------------------->
+		<link rel="icon" type="Image/png" href="images/1826logo-cropped.png" />
+		<title>1826 Bistro on the Green</title> 
+		
+	</head>
+	
+	<body>	
+		
+		<div class="MainBody"> 
+			
+			<!---------------------------------------- header ----------------------------------------------------->
+			<div class="header">
+				<a href="index.html"><img class="headerLogo"  src="images/1826logo-1.png" alt=""></a>
+			</div>
+			<!------------------------------------------ navigation ----------------------------------------------->
+			<!-- collapseable bar -->			
+			
+			<div class="w3-center" id="menuBar">	
+				<div class="w3-bar">
+					<a href="index.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black" id="active" style="font-weight:bold;">Home</a>
+					<a href="lunch.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Lunch</a>
+					<a href="dinner.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Dinner</a>
+					<a href="cocktails.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Cocktails</a>
+					<a href="location.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black">Location</a>
+					<a href="javascript:void(0)" class="w3-bar-item w3-btn w3-right w3-hide-large w3-hide-medium" 
+					onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>	
+			<!-- id="menuNavbar executes the javascript -->
+			<div class="w3-center">
+				<div id="menuNavbar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+					<a href="index.html" class="w3-center w3-bar-item w3-btn w3-white">Home</a>
+					<a href="lunch.html" class="w3-center w3-bar-item w3-btn">Lunch</a>
+					<a href="dinner.html" class="w3-center w3-bar-item w3-btn">Dinner</a>
+					<a href="cocktails.html" class="w3-center w3-bar-item w3-btn">Cocktails</a>
+					<a href="location.html" class="w3-center w3-bar-item w3-btn">Location</a>
+				</div>
+			</div>
+			
+			<!------------------------------------------------------- main ------------------------------------------------------------->
+			<section class="mainClass">
+				
+				<hr class="whiteLine">
+				
+				<!-- slideshow / carousel from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr -->
+				<div class="slideshow-container">
+					<div class="w3-content w3-section"id="slideshow">
+						<img class="mySlides w3-animate-fading"  src="images/photo7.jpg">
+						<img class="mySlides w3-animate-fading"  src="images/photo1.jpg">
+						<img class="mySlides w3-animate-fading"  src="images/photo5.jpg">
+						<img class="mySlides w3-animate-fading"  src="images/photo4.jpg">
+						<img class="mySlides w3-animate-fading"  src="images/photo9.jpg" >
+						<img class="mySlides w3-animate-fading"  src="images/photo3.jpg" >
+						<img class="mySlides w3-animate-fading"  src="images/photo11.jpg" >
+						<img class="mySlides w3-animate-fading"  src="images/photo8.jpg" >
+						<img class="mySlides w3-animate-fading"  src="images/photo12.jpg" >
+						
+						<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				</div>
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">    
+					
+					<div class="w3-col m3" >  <!-- empty columns -->
+						<p></p>
+					</div>
+					
+					<div class="w3-col m6" >		  <!-- START center columns -->
+						<br>
+						<p id="homePage">1826 Bistro On The Green is a casual dinning experience in downtown Pendleton, serving lunch and dinner in a 
+							warm atmosphere, featuring a wonderful patio.
+							<br><br>
+							1826 Bistro On The Green is located in Pendleton’s historic Farmers Society Hall. Built by the Farmers’ Society 
+							of South Carolina from 1826-1828, the site has been the meeting place for the society since that time, and 
+							is the oldest Farmers Hall still in continuous use in the U.S. 
+							<br><br>
+						</p>	
+						<table class="homeTable">		
+							<tr>
+								<td class="item">	
+									<p>We invite you to follow us on <a href="https://www.facebook.com/1826bistro/"
+										target="_blank" data-toggle="tooltip" title="Click to go to our Facebook page.">Facebook</a>
+										and <a href="http://instagram.com/1826bistro" target="_blank"
+										data-toggle="tooltip" title="Click to go to our Instagram page.">Instragram</a>.  Our Facebook page is a great place to find our
+										specials, upcoming events, photos and customer reviews.  Check us out on 
+										<a href="https://www.yelp.com/biz/1826-bistro-pendleton?osq=1826+bistro" 
+									target="_blank" data-toggle="tooltip" title="See reviews on Yelp!">Yelp!</a> for even more great reviews!</p>
+								</td>
+							</tr>
+						</table> 
+						<br>
+					</div>    <!-- END center columns -->					
+					
+					<div class="w3-col m3" >  <!-- empty columns -->
+						<p></p>
+					</div>
+					
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">
+					
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+					
+					<div class="w3-col m6">
+						<h2 class="title" style="text-align:center; margin-bottom:2px;"><b>LUNCH</b></h2>
+						Tuesday – Saturday<br>
+						11:30 until 2:00
+					</div>
+					
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+					
+				</div>  <!-- END row -->
+				
+				<!-- BEGIN row -->
+				<div class="w3-row">
+					
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+					
+					<div class="w3-col m6">	
+						<h2 class="title" style="text-align:center;  margin-bottom:2px;"><b>DINNER</b></h2>
+						Thursday – Saturday<br>
+						5:00 until close
+						
+					</div>
+					
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+					
+				</div>  <!-- END row -->
+				
+				<!-- up to top -->
+				<br>
+				<div class="upArrow">
+					<a class="w3-button w3-round" onclick="topFunction()"><i class="	fa fa-arrow-circle-up fa-2x"></i></a>				
+				</div>
+				
+				<hr class="whiteLine">
+				
+			</section>  <!-- END main section -->
+			
+			<!----------------------------------------------------------------- footer ------------------------------------------------------------->
+			<footer>
+				
+				<div class="w3-row">
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>			
+					<!-- address -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>ADDRESS</b></h3>
+						<p id="footerWords">
+							105 Exchange Street,
+							Pendleton, SC
+							<br><i class="fa fa-envelope fa-fw"></i>&nbsp 
+							<a href="mailto:1826onthegreen@gmail.com" data-toggle="tooltip" 
+							title="Click here to email us." >1826onthegreen@gmail.com</a>
+							<br><i class="fa fa-phone fa-fw"></i>&nbsp 864-646-5500
+						</p>
+					</div>
+					<!-- follow us -->
+					<div class="w3-col m3">
+						<h3 class="footerTitle"><b>FOLLOW US</b></h3>
+						<p id="footerWords">
+							<a href="https://www.facebook.com/1826bistro/" target="_blank" data-toggle="tooltip" title="Click to go to our Facebook page.">
+							<img src="images/facebooklogo.png" style="width:19%;"></a>
+							<a href="http://instagram.com/1826bistro" target="_blank" data-toggle="tooltip" title="Click to go to our Instagram page.">
+							<img src="images/instagramlogo.png" style="width:16%;"></a>&nbsp  &nbsp
+							<a href="https://www.yelp.com/biz/1826-bistro-pendleton?osq=1826+bistro" target="_blank" data-toggle="tooltip" title="See reviews on Yelp!">
+							<img src="images/yelplogo.png" style="width:15%;"></a>
+						</p>
+					</div>		
+					<!-- empty columns -->
+					<div class="w3-col m3">
+						<p></p>
+					</div>
+				</div>  <!-- END row -->
+				
+				<!-- Google map -->
+				<div class="w3-row" id="map">
+					<div class="w3-col">
+						<div class="w3-container">
+							<div id="map-container" class="z-depth-1" style="height: 300px"></div>
+						</div>
+					</div>  	
+				</div> 
+				
+				<div class="w3-row">
+					<!-- copyright -->
+					<div class="w3-col m12 copyright">
+						<p>
+							Copyright © 1826 Bistro 2018
+						</p>
+					</div>	
+				</div> <!-- END row -->
+				
+			</footer>
+			
+		</div>				<!-- END mainBody-->
+		
+		<!------------------------------------------------------------------ javascript & JQuery ----------------------------------------------------------------------->
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+		
+		<script>
+			
+			<!------------------------------------------ collapse navbar ------------------------------------------>
+			function myFunction() 
+			{
+				var x = document.getElementById("menuNavbar");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+					} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			
+			<!-- scroll to top of document: code from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 						// For Safari
+				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}	
+			
+			<!--- google map: code from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_google_map_4 -->
+			function myMap()
+			{
+				var mapOptions = 
+				{
+					center: new google.maps.LatLng(34.650830, -82.783649),
+					zoom: 18,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+				}
+				var map = new google.maps.Map(document.getElementById("map-container"), mapOptions);
+			}
+			
+			<!------------------------------------- jquery for tooltip pop up ---------------------------------->
+			$(document).ready(function()
+			{
+				//		$('[data-toggle="tooltip"]').tooltip(); 
+				$('.tooltip').tooltipster();
+			});
+			
+			<!-------------------------------------------------   slideshow ------------------------------------------>
+			var slideIndex = 1;
+			showDivs(slideIndex);	
+			function plusDivs(n)
+			{
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) 
+			{
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length)
+				{
+					slideIndex = 1
+				}    
+				if (n < 1) 
+				{
+					slideIndex = x.length
+				}
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.display = "none";  
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+			
+			<!----------------------------------------------- carousel ------------------------------------------>
+			var myIndex = 0;
+			carousel();
+			function carousel() 
+			{
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) 
+				{
+					myIndex = 1
+				}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 4500); // Change image every 2 seconds
+			}
+		</script>
+		
+		<!--Google Maps : must be positioned after the function -->
+		<!-- got API key from : https://developers.google.com/maps/documentation/javascript/get-api-key -->
+		<!-- my api key: "AIzaSyC0ejDdsvqSVqLBFJYfj3A1fvjf678OyDk" -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0ejDdsvqSVqLBFJYfj3A1fvjf678OyDk&callback=myMap"></script>
+		
+	</body>
+	
+</html>																
